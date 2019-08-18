@@ -6,6 +6,21 @@
  * Create a list that holds all of your cards
  */
 
+const cards = document.querySelectorAll('.card');
+const deck = document.querySelector('.deck');
+
+deck.addEventListener('click', (event) => {
+  const cardTarget = event.target;
+  if (cardTarget.classList.contains('card')) {
+    cardTarget.classList.toggle('open');
+    cardTarget.classList.toggle('show');
+  }
+});
+
+
+
+
+
 
 /*
  * Display the cards on the page
