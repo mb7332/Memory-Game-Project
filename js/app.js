@@ -6,18 +6,29 @@
  * Create a list that holds all of your cards
  */
 
-const cards = document.querySelectorAll('.card');
 const deck = document.querySelector('.deck');
+let openCardsList = [];
 
 deck.addEventListener('click', (event) => {
   const cardTarget = event.target;
-  if (cardTarget.classList.contains('card')) {
-    cardTarget.classList.toggle('open');
-    cardTarget.classList.toggle('show');
+  if (cardTarget.classList.contains('card') && openCardsList.length < 2) {
+    cardClassToggle(cardTarget);
+    addToList(cardTarget);
+    if (openCardsList.length === 2) {
+      console.log('Here are the two cards!');
+    }
   }
 });
 
+function cardClassToggle(cardTarget) {
+  cardTarget.classList.toggle('open');
+  cardTarget.classList.toggle('show');
+}
 
+function addToList(cardTarget) {
+  openCardsList.push(cardTarget);
+  console.log(openCardsList);
+}
 
 
 
