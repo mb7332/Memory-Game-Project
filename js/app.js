@@ -1,4 +1,8 @@
 /*
+ * Memory Game Project Javascript
+ */
+
+/*
  * Create a list that holds all of your cards
  */
 
