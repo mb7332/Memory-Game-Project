@@ -15,7 +15,7 @@ deck.addEventListener('click', (event) => {
     cardClassToggle(cardTarget);
     addToList(cardTarget);
     if (openCardsList.length === 2) {
-      console.log('Here are the two cards!');
+      doTheyMatch(openCardsList);
     }
   }
 });
@@ -28,6 +28,18 @@ function cardClassToggle(cardTarget) {
 function addToList(cardTarget) {
   openCardsList.push(cardTarget);
   console.log(openCardsList);
+}
+
+function doTheyMatch(openCardsList) {
+  if (
+    openCardsList[0].firstElementChild.className ===
+    openCardsList[1].firstElementChild.className) {
+      console.log("They are a match!!!!");
+      openCardsList[0].classList.toggle('match');
+      openCardsList[1].classList.toggle('match');
+  } else {
+      console.log("They are not a match, sorry.");
+  }
 }
 
 
