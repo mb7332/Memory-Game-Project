@@ -24,7 +24,11 @@
         <li><i class="fa fa-star"></i></li>
       </ul>
 
-      <span class="moves">3</span> Moves
+      <!--Added Moves with some spaces and Timer to panel-->
+      <span class="moves">0</span> Moves &nbsp; &nbsp; Timer
+
+      <!--Added timer for minutes and seconds-->
+      <span class="timerMinutes">0</span>:<span class="timer">0</span>
 
       <div class="restart">
         <i class="fa fa-repeat"></i>
@@ -81,6 +85,31 @@
         <i class="fa fa-cube"></i>
       </li>
     </ul>
+  </div>
+
+  <!--Added section for modal-->
+  <div class="modal_background hide">
+
+    <div class="modal_body">
+      <div class="modal_heading">
+        <h1 class="modal_message">Woo Hoo! You Won!</h1>
+        <h2 class="modal_title">Your Results</h2>
+      </div>
+
+      <!--Modal data section-->
+      <div class="modal_info">
+        <span class="modal_time">Time: </span>
+        <span class="modal_stars">Stars: </span>
+        <span class="modal_moves">Moves: </span>
+      </div>
+
+      <!--Modal buttons section-->
+      <div class="modal_buttons">
+        <button class="modal_replay_button">Replay</button>
+        <button class="modal_cancel_button">Cancel</button>
+      </div>
+    </div>
+
   </div>
 
   <script src="js/app.js"></script>

@@ -111,3 +111,80 @@ h1 {
     float: right;
     cursor: pointer;
 }
+
+.score-panel .timerMinutes {
+  margin-right: 3px;
+}
+
+.score-panel .timer {
+  margin-left: 4px;
+}
+
+/*
+ * Styles for the Modal
+ */
+
+.modal_background {
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.hide {
+  display: none;
+}
+
+.modal_body {
+  transform: translate(-50%, -70%);
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  background: #ffffcc;
+}
+
+.modal_message {
+  display:block;
+  justify-content: center;
+  text-align: center;
+  padding: 1px;
+}
+
+.modal_heading {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 1px;
+}
+
+.modal_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+}
+
+/*
+ * Section for modal buttons
+ */
+ 
+.modal_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 1px;
+}
+
+.modal_cancel_button {
+  width: 60px;
+  height: 30px;
+}
+
+.modal_replay_button {
+  width: 60px;
+  height: 30px;
+}
